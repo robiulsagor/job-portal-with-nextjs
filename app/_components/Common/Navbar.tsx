@@ -22,18 +22,18 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className={`fixed top-0 left-0 w-full h-16  shadow-md z-50  ${scrollY > 100 ? "bg-[#000] shadow-md" : "bg-transparent"}  transition-all duration-300 ease-in-out`}>
+    <header className={`sticky top-0 left-0 w-full h-16  shadow-md z-50  bg-black transition-all duration-300 ease-in-out`}>
       <div className="wrapper-nav flex justify-between items-center h-16  text-white">
-        <div className="flex items-center space-x-3" >
+        <Link href='/' className="flex items-center space-x-3" >
           <BriefcaseBusiness /> <h2 className="text-xl font-semibold">DreamJob</h2>
-        </div>
+        </Link>
 
         <ul className="hidden md:flex items-center space-x-6 text-base font-semibold gap-3">
           <li>
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/">Jobs</Link>
+            <Link href="/jobs">Jobs</Link>
           </li>
           <li>
             <Link href="/">About</Link>

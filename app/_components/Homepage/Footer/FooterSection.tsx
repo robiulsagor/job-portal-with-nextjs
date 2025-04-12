@@ -7,9 +7,9 @@ const FooterSection = () => {
         <div className="bg-slate-900 text-slate-300">
             <div className="wrapper">
 
-                <div className="w-full flex flex-wrap items-center justify-end gap-10 py-10 text-center md:text-left border">
-                    <div className="min-w-[200px] max-w-[220px]">
-                        <div className="flex items-center justify-center space-x-3" >
+                <div className="w-full flex flex-wrap items-center justify-end gap-10 py-10 text-center md:text-left">
+                    <div className="min-w-[200px] max-w-[280px]">
+                        <div className="flex items-center justify-center md:justify-start space-x-3" >
                             <BriefcaseBusiness /> <h2 className="text-xl font-semibold">DreamJob</h2>
                         </div>
 
@@ -75,7 +75,7 @@ const FooterSection = () => {
                 </div>
 
                 {/* copywrite */}
-                <div className="flex items-center justify-between mt-10 border">
+                <div className="flex items-center justify-between mt-10 ">
                     <span className="text-xs font-light">
                         &copy; {new Date().getFullYear()} DreamJob. All rights reserved.
                     </span>

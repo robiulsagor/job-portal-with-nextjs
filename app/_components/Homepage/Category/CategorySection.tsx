@@ -1,5 +1,5 @@
 import { categories } from "@/lib/data"
-import Heading from "../Heading"
+import Heading from "../../Common/Heading"
 import CategoryCard from "./CategoryCard"
 
 const CategorySection = () => {

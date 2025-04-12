@@ -23,7 +23,7 @@ const MyMobileNav = () => {
     }, [show])
 
     return (
-        <div className="md:hidden relative z-50 ">
+        <div className="md:hidden relative z-50">
             <Menu size={29} onClick={handleToggle} className="cursor-pointer" />
 
             {/* Overlay */}

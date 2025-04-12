@@ -1,6 +1,6 @@
 'use client'
 import Autoplay from "embla-carousel-autoplay"
-import Heading from "../Heading"
+import Heading from "../../Common/Heading"
 import TestimonialCard from "./TestimonialCard"
 import {
     Carousel,

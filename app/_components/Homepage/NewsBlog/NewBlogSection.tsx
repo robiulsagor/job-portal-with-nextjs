@@ -1,5 +1,5 @@
 import { blogPosts } from "@/lib/data"
-import Heading from "../Heading"
+import Heading from "../../Common/Heading"
 import NewsCard from "./NewsCard"
 
 const NewBlogSection = () => {

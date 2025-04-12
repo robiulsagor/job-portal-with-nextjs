@@ -1,11 +1,10 @@
-import BrandCarousels from "./_components/BrandCarousels";
-import CategorySection from "./_components/Category/CategorySection";
-import CompanySection from "./_components/Company/CompanySection";
-import FooterSection from "./_components/Footer/FooterSection";
-import Hero from "./_components/Hero/Hero";
-import NewBlogSection from "./_components/NewsBlog/NewBlogSection";
-import RecentJobs from "./_components/RecentJobs/RecentJobs";
-import Testimonials from "./_components/Testimonials/Testimonials";
+import BrandCarousels from "./_components/Homepage/BrandCarousels";
+import CategorySection from "./_components/Homepage/Category/CategorySection";
+import CompanySection from "./_components/Homepage/Company/CompanySection";
+import Hero from "./_components/Homepage/Hero/Hero";
+import NewBlogSection from "./_components/Homepage/NewsBlog/NewBlogSection";
+import RecentJobs from "./_components/Homepage/RecentJobs/RecentJobs";
+import Testimonials from "./_components/Homepage/Testimonials/Testimonials";
 
 export default function Home() {
 
@@ -16,9 +15,8 @@ export default function Home() {
       <RecentJobs />
       <CategorySection />
       <CompanySection />
-      <Testimonials/>
+      <Testimonials />
       <NewBlogSection />
-      <FooterSection />
     </div>
   );
 }
