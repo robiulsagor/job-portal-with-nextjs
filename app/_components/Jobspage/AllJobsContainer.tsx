@@ -15,10 +15,10 @@ const AllJobsContainer = () => {
     return (
         <div className="w-full md:flex-1">
             <div className="flex items-center justify-between px-4 mb-4">
-                <p className="text-slate-500 text-sm">Showing 1-10 of 2 results</p>
+                <p className="text-slate-500 text-xs md:text-sm">Showing 1-10 of 2 results</p>
 
                 <Select>
-                    <SelectTrigger className="w-[180px]">
+                    <SelectTrigger className="w-fit text-xs md:w-[180px]">
                         <SelectValue placeholder="Sort By" />
                     </SelectTrigger>
                     <SelectContent>

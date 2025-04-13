@@ -32,8 +32,8 @@ const JobCard = ({ job }: { job: JobCardProps }) => {
                     <p className="text-sm mt-2 text-slate-600">{job.companyName} </p>
                 </div>
             </div>
-            <div className="flex flex-col md:flex-row  justify-between gap-3">
-                <div className="flex flex-col md:flex-row gap-4 text-sm">
+            <div className="flex flex-col lg:flex-row  justify-between gap-3">
+                <div className="flex flex-col lg:flex-row gap-4 text-sm">
                     <div className="flex items-center gap-2">
                         <BriefcaseBusiness className="text-brand" />
                         <span className="text-slate-500">{job.jobCategory} </span>

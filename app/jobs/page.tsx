@@ -8,7 +8,7 @@ const Jobs = () => {
             <PageHeader text="Jobs" />
 
             <div className="wrapper !pt-6">
-                <div className="flex items-start gap-5 flex-wrap">
+                <div className="flex items-start  gap-5 flex-wrap">
                     <JobFilterContainer />
                     <AllJobsContainer />
                 </div>

@@ -22,24 +22,24 @@ const JobFilterContainer = () => {
     const [showAll, setShowAll] = useState(false)
 
     return (
-        <div className="border w-full md:w-[315px] p-4 rounded-xl bg-[#EBF5F4] mt-auto lg:mt-0">
+        <div className="border w-full md:w-[315px] p-4 rounded-xl bg-[#EBF5F4]  ">
             {/* search by title */}
             <div className="flex-1">
                 <h2 className="text-lg font-semibold text-slate-800">Search by job title</h2>
-                <div className="flex items-center gap-2 mt-2 border rounded-lg py-1 px-2 bg-white">
-                    <Search size={20} className="text-slate-500" />
-                    <Input placeholder="Job title" className="border-none  focus-visible:ring-0 text-sm" />
+                <div className="flex items-center mt-2 border rounded-lg py-1.5 px-2.5 bg-white">
+                    <Search size={17} className="text-slate-500" />
+                    <Input placeholder="Job title" className="border-none focus-visible:ring-0 text-sm shadow-none" />
                 </div>
             </div>
 
             {/* filter by location */}
             <div className="mt-5 flex-1">
                 <h2 className="text-lg font-semibold text-slate-800">Location</h2>
-                <div className="flex items-center gap-2 mt-2 border rounded-lg py-1 px-2 bg-white">
-                    <MapPin size={20} className="text-slate-500" />
+                <div className="flex items-center mt-2 border rounded-lg py-0.5 px-2.5 bg-white">
+                    <MapPin size={17} className="text-slate-500" />
 
-                    <Select>
-                        <SelectTrigger className="flex-1 border-none">
+                    <Select >
+                        <SelectTrigger className="flex-1 border-none cursor-pointer shadow-none ">
                             <SelectValue placeholder="Choose City" />
                         </SelectTrigger>
                         <SelectContent>

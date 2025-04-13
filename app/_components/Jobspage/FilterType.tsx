@@ -16,7 +16,7 @@ const FilterType = ({ title, type, value }: { title: string, type: string, value
 
             {
                 value.map((data) => (
-                    <div key={data.id} className="mt-3 flex items-center justify-between">
+                    <div key={data.id} className="flex items-center justify-between mt-1.5 select-none">
                         <div className="items-top flex space-x-2">
                             <input type="checkbox" name={type} id={data.value} />
                             <label htmlFor={data.value} className="cursor-pointer text-slate-700 hover:text-slate-500 transition duration-150">{data.title} </label>
