@@ -1,14 +1,19 @@
 import {
+  Award,
   BadgeDollarSign,
   BedDouble,
   Briefcase,
   BuildingIcon,
   Bus,
+  Clock,
   GraduationCap,
   HardHat,
+  MapPin,
   ShoppingBag,
   Sprout,
+  User,
   Users,
+  Wallet,
   Wrench,
 } from "lucide-react";
 
@@ -341,3 +346,48 @@ export const jobTags = [
     value: "construction",
   },
 ];
+
+export const jobOverview = [
+  {
+    id:1,
+    title: "Job Title",
+    value: "Forward Security Director",
+    icon: User,
+  },
+  {
+    id:2,
+    title: "Job Type",
+    value: "Full Time",
+    icon: Clock,
+  },
+  {
+    id:3,
+    title: "Category",
+    value: "Commerce",
+    icon: Briefcase,
+  },
+  {
+    id:4,
+    title: "Experience",
+    value: "5 Years",
+    icon: Award,
+  },
+  {
+    id:5,
+    title: "Degree",
+    value: "Master's",
+    icon: GraduationCap,
+  },
+  {
+    id:6,
+    title: "Offered Salary",
+    value: "$40000-$42000",
+    icon: Wallet,
+  },
+  {
+    id:7,
+    title: "Location",
+    value: "New-York, USA",
+    icon: MapPin,
+  },
+]

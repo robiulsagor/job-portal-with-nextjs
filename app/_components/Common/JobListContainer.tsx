@@ -1,5 +1,5 @@
 import React from "react";
-import JobCard from "../Homepage/RecentJobs/JobCard"
+import JobCard from "./JobCard"
 
 interface JobListProps {
     id: number;
@@ -13,12 +13,12 @@ interface JobListProps {
     location: string
 }
 
-const JobListContainer = ({ jobList }: { jobList: JobListProps[] }) => {
+const JobListContainer = ({ page, jobList }: { page?: string, jobList: JobListProps[] }) => {
     return (
         <div className="flex flex-col gap-5">
             {
                 jobList.map((job) => (
-                    <JobCard key={job.id} job={job} />
+                    <JobCard key={job.id} job={job} page={page} />
                 ))
             }
         </div>

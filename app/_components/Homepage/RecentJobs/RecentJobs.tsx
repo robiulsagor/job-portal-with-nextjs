@@ -10,7 +10,7 @@ const RecentJobs = () => {
                 text2="Some of the recent jobs available for you" center={false}
                 link='/jobs' />
 
-            <JobListContainer jobList={recentJobs} />
+            <JobListContainer page="recent" jobList={recentJobs} />
         </div>
     )
 }

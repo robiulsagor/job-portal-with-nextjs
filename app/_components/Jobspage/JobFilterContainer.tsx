@@ -22,7 +22,7 @@ const JobFilterContainer = () => {
     const [showAll, setShowAll] = useState(false)
 
     return (
-        <div className="border w-full md:w-[315px] p-4 rounded-xl bg-[#EBF5F4]  ">
+        <div className="border w-full md:w-[315px] p-4 rounded-xl bg-brand-light">
             {/* search by title */}
             <div className="flex-1">
                 <h2 className="text-lg font-semibold text-slate-800">Search by job title</h2>

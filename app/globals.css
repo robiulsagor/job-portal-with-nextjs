@@ -8,6 +8,7 @@
   --color-test-40: oklch(66.22% 0.142 187.29);
   --color-secondary: var(--secondary);
   --color-brand: var(--brand);
+  --color-brand-light: var(--brand-light);
 }
 
 @theme inline {
@@ -53,6 +54,7 @@
 :root {
   --radius: 0.625rem;
   --brand: #309689;
+  --brand-light: #ebf5f4;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
