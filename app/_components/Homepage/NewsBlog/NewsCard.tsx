@@ -11,7 +11,7 @@ interface NewsCardProps {
 
 const NewsCard = ({ post }: { post: NewsCardProps }) => {
     return (
-        <div className="flex-1 min-w-[300px] bg-white shadow-sm rounded-xl p-4 hover:shadow-xl hover:-translate-y-1 transition duration-300 ease-in-out">
+        <div className="flex-1 min-w-[260px] bg-white shadow-sm rounded-xl p-4 hover:shadow-xl hover:-translate-y-1 transition duration-300 ease-in-out">
             <div className=" relative">
                 <Image src={post.thumbnail} alt="news" width={400} height={200} className="w-full h-72 object-cover  rounded-xl" />
                 <span className="absolute top-3 left-3 px-3 py-1.5 rounded-lg bg-brand text-white text-xs capitalize">{post.type} </span>

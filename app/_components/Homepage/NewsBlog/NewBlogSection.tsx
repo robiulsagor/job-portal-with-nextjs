@@ -5,7 +5,7 @@ import NewsCard from "./NewsCard"
 const NewBlogSection = () => {
     return (
         <div>
-            <div className="wrapper">
+            <div className="wrapper bg-cyan-800">
                 <Heading
                     text1="News and Blog"
                     text2="Stay updated with the latest news and blog posts"

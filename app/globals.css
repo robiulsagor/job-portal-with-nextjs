@@ -143,3 +143,11 @@
 .select-label {
   @apply flex justify-between items-center text-gray-500 px-3 py-2 h-full;
 }
+
+/* globals.css or input.css */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  @apply shadow-[inset_0_0_0_1000px_white] text-black;
+  transition: background-color 5000s ease-in-out 0s;
+}

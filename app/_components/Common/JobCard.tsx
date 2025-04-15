@@ -15,6 +15,10 @@ interface JobCardProps {
     employmentType: string;
     salary: string;
     location: string;
+    description?: string;
+    keyResponsibilities?: string[];
+    professionalSkills?: string[];
+    tags?: string[];
 }
 
 const JobCard = ({ page, job }: { page?: string, job: JobCardProps }) => {

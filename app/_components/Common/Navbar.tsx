@@ -3,23 +3,23 @@
 import { Button } from "@/components/ui/button";
 import { BriefcaseBusiness } from "lucide-react";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import MyMobileNav from "./MyMobileNav";
+import { menuItems } from "@/lib/data";
 
 const Navbar = () => {
-  const [scrollY, setScrollY] = useState(0);
+  // const [scrollY, setScrollY] = useState(0);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setScrollY(window.scrollY);
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   return (
     <header className={`sticky top-0 left-0 w-full h-16  shadow-md z-50  bg-black transition-all duration-300 ease-in-out`}>
@@ -29,18 +29,13 @@ const Navbar = () => {
         </Link>
 
         <ul className="hidden md:flex items-center space-x-6 text-base font-semibold gap-3">
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/jobs">Jobs</Link>
-          </li>
-          <li>
-            <Link href="/">About</Link>
-          </li>
-          <li>
-            <Link href="/">Contact</Link>
-          </li>
+          {
+            menuItems.map(item => (
+              <li key={item.id}>
+                <Link href={item.link}>{item.title}</Link>
+              </li>
+            ))
+          }
         </ul>
 
         <div className="hidden sm:block">
